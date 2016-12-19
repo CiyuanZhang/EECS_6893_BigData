@@ -33,7 +33,7 @@ ENVIRONMENT:
 AUTHENTICATION:
 #https://apps.twitter.com/app/13197060/show
 #https://twitter.com/?lang=en
-#Owner: XuLingqing
+#Owner: XuLingqing, Ciyuan Zhang, Shihao Zhang
 #Owner ID: 774060576100192256
 API_KEY(Consumer Key ) = 'wO3e5cZTaP9MuSIDc58RBz6YB'
 API_SECRET(Consumer Secret) = 'rUF046vyBebhlz344dJnB20xHN29RlsISUxRkX4AXtVgkpwOie'
