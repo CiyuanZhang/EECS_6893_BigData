@@ -1,9 +1,9 @@
 Big data analytics_CU ELEN6893
 Final Project
-%Analyzing Twitter Sentiment of 2016 Post-Presidential Election
+Analyzing Twitter Sentiment of 2016 Post-Presidential Election
 
 ProjectID: 
-			%201612-32
+			201612-32
 Team Member:
 			Lingqing XU        (Lx2201)
 			Ciyuan ZHANG   (cz2350)
@@ -43,9 +43,39 @@ ACCESS_TOKEN_SECRET = '9Xf1DyzyRiLAzcEHOi1rDcijsG3EQ57UnVfLqphKPkIKb'
 twitter201612_32.py : Used to pull and write data to data.txt file. In the txt documents, each line is tweets of a specific user that contains the keyword. We stream tweets in real time using [Twitter's API](https://dev.twitter.com/streaming/public) and tweepy(https://github.com/tweepy/tweepy). These tweets are filtered on terms related to the two candidates, and formatted with the tweets containing candidate name. 
 
 TwitterNLP : Used to process data
+#Natural Language Processing with Spark
+
+##Requires
+* Anaconda Python 2.7
+  * nltk
+  * numpy, pandas
+* Spark
+
+##Use PySpark to preprocess text data
+* Language Classification
+* Stop Word Removal
+* Custom Twitter Specific Clean Up
+* Change capital form
+* Part of Speech Tagging
+* Lemmatization/Stemming of Text
+* General Cleanup
+
+##Converting text to numerical data with ML Pipelines
+* Tokenization
+* Term Frequency Hashing
+* Inverse Document Frequency
+
+##Training & Testing a Model
+* Crossvalidation
+* Evaluation
+
+##Step to run
+* Twitter_NLP.py to train the model and save it in pickles
+* sentiment_mod.py open saved pickles to classify the twitters
 
 Result: 
-We will get the percentage of tweets that use positive words, or rather hold positive attitude towards
+We will get the percentage of tweets that use positive words, or rather hold positive attitude towards Trump and Hillary. 
+Then draw a comparison graph by result.html.
 
 
  
